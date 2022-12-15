@@ -12,6 +12,6 @@ to run nodejs:
 
 `npm install express `
 
-`npm install kafka-node``
+`npm install kafka-node`
 
 `node server.js`
