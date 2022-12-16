@@ -16,7 +16,7 @@ Run the drill tool to benchmark the REST API:
 Results of the benchmarks: 
 
 For Rust: 
-`
+```
 Time taken for tests      1.1 seconds
 
 Total requests            10000
@@ -39,11 +39,11 @@ Sample standard deviation 57ms
 
 99.9'th percentile        1073ms
 
-`
+```
 
 For node.js:
 
-`
+```
 
 Time taken for tests      1.7 seconds
 
@@ -67,4 +67,4 @@ Sample standard deviation 40ms
 
 99.9'th percentile        234ms
 
-`
+```
