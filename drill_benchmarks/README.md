@@ -29,6 +29,7 @@ Sample standard deviation 57ms
 99.5'th percentile        205ms
 99.9'th percentile        1073ms
 ```
+---
 
 For node.js:
 
@@ -47,6 +48,8 @@ Sample standard deviation 40ms
 99.9'th percentile        234ms
 ```
 
+---
+
 results from go
 ```
 Time taken for tests      0.3 seconds
@@ -62,6 +65,8 @@ Sample standard deviation 15ms
 99.9'th percentile        106ms
 
 ```
+
+---
 
 results from FastAPI:
 
