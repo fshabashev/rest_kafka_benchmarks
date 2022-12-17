@@ -84,3 +84,20 @@ Sample standard deviation 15ms
 99.9'th percentile        106ms
 
 ```
+
+results from FastAPI:
+
+```
+Time taken for tests      0.5 seconds
+Total requests            1000
+Successful requests       1000
+Failed requests           0
+Requests per second       2017.09 [#/sec]
+Median time per request   41ms
+Average time per request  47ms
+Sample standard deviation 18ms
+99.0'th percentile        104ms
+99.5'th percentile        119ms
+99.9'th percentile        125ms
+
+```
