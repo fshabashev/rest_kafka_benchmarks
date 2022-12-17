@@ -1,16 +1,19 @@
 ---
 
 concurrency: 100
-base: 'http://localhost:8082'
+base: 'http://localhost:8080'
 iterations: 1000
 rampup: 2
 
 plan:
+#  - name: fetch index
+#    request:
+#      url: /
   - name: post to kafka
     request:
-      url: /kafka_endpoint
+      url: /
       method: POST
-      body: '{"val": "test from drill node"}'
+      body: '{"val": "test from drill"}'
       headers:
         Content-Type: 'application/json'
 

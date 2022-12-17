@@ -68,3 +68,19 @@ Sample standard deviation 40ms
 99.9'th percentile        234ms
 
 ```
+
+results from go
+```
+Time taken for tests      0.3 seconds
+Total requests            10000
+Successful requests       10000
+Failed requests           0
+Requests per second       28754.62 [#/sec]
+Median time per request   27ms
+Average time per request  28ms
+Sample standard deviation 15ms
+99.0'th percentile        77ms
+99.5'th percentile        86ms
+99.9'th percentile        106ms
+
+```

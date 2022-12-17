@@ -1,8 +1,8 @@
 ---
 
-concurrency: 1000
-base: 'http://localhost:8081'
-iterations: 10000
+concurrency: 100
+base: 'http://localhost:8000'
+iterations: 1000
 rampup: 2
 
 plan:
@@ -11,9 +11,9 @@ plan:
 #      url: /
   - name: post to kafka
     request:
-      url: /kafka_endpoint
+      url: /send_to_topic
       method: POST
-      body: '{"val": "test from drill"}'
+      body: '{"text": "test from drill"}'
       headers:
         Content-Type: 'application/json'
 
