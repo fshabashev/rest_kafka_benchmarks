@@ -100,3 +100,24 @@ Sample standard deviation 27ms
 99.5'th percentile        93ms
 99.9'th percentile        98ms
 ```
+---
+results for FastAPI (via guniorn):
+command for reference:
+```
+gunicorn server:app --workers 8  --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:5002
+```
+
+```
+Time taken for tests      0.5 seconds
+Total requests            1000
+Successful requests       1000
+Failed requests           0
+Requests per second       2013.20 [#/sec]
+Median time per request   42ms
+Average time per request  46ms
+Sample standard deviation 16ms
+99.0'th percentile        94ms
+99.5'th percentile        96ms
+99.9'th percentile        103ms
+
+```
