@@ -17,17 +17,17 @@ Results of the benchmarks:
 
 For Rust: 
 ```
-Time taken for tests      1.1 seconds
+Time taken for tests      1.0 seconds
 Total requests            10000
 Successful requests       10000
 Failed requests           0
-Requests per second       9072.92 [#/sec]
-Median time per request   99ms
-Average time per request  102ms
-Sample standard deviation 57ms
-99.0'th percentile        139ms
-99.5'th percentile        205ms
-99.9'th percentile        1073ms
+Requests per second       10405.54 [#/sec]
+Median time per request   8ms
+Average time per request  9ms
+Sample standard deviation 3ms
+99.0'th percentile        19ms
+99.5'th percentile        22ms
+99.9'th percentile        27ms
 ```
 ---
 
@@ -52,23 +52,28 @@ Sample standard deviation 40ms
 
 results from go
 ```
-Time taken for tests      0.3 seconds
+Time taken for tests      0.2 seconds
 Total requests            10000
 Successful requests       10000
 Failed requests           0
-Requests per second       28754.62 [#/sec]
-Median time per request   27ms
-Average time per request  28ms
-Sample standard deviation 15ms
-99.0'th percentile        77ms
-99.5'th percentile        86ms
-99.9'th percentile        106ms
+Requests per second       43890.45 [#/sec]
+Median time per request   1ms
+Average time per request  1ms
+Sample standard deviation 1ms
+99.0'th percentile        3ms
+99.5'th percentile        6ms
+99.9'th percentile        9ms
 
 ```
 
 ---
 
 results from FastAPI:
+
+
+```
+uvicorn server:app --port 5006
+```
 
 ```
 Time taken for tests      0.5 seconds
@@ -108,16 +113,15 @@ gunicorn server:app --workers 8  --worker-class uvicorn.workers.UvicornWorker --
 ```
 
 ```
-Time taken for tests      0.5 seconds
-Total requests            1000
-Successful requests       1000
+Time taken for tests      0.8 seconds
+Total requests            10000
+Successful requests       10000
 Failed requests           0
-Requests per second       2013.20 [#/sec]
-Median time per request   42ms
-Average time per request  46ms
-Sample standard deviation 16ms
-99.0'th percentile        94ms
-99.5'th percentile        96ms
-99.9'th percentile        103ms
-
+Requests per second       12991.51 [#/sec]
+Median time per request   4ms
+Average time per request  6ms
+Sample standard deviation 9ms
+99.0'th percentile        37ms
+99.5'th percentile        64ms
+99.9'th percentile        125ms
 ```
