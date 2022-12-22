@@ -88,17 +88,17 @@ Sample standard deviation 18ms
 ---
 results from Flask (via Waitress):
 ```
-Time taken for tests      0.2 seconds
-Total requests            1000
-Successful requests       0
-Failed requests           1000
-Requests per second       4305.26 [#/sec]
-Median time per request   7ms
-Average time per request  20ms
-Sample standard deviation 27ms
-99.0'th percentile        91ms
-99.5'th percentile        93ms
-99.9'th percentile        98ms
+Time taken for tests      11.0 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       27.21 [#/sec]
+Median time per request   733ms
+Average time per request  713ms
+Sample standard deviation 116ms
+99.0'th percentile        930ms
+99.5'th percentile        946ms
+99.9'th percentile        950ms
 ```
 ---
 results for FastAPI (via guniorn):
